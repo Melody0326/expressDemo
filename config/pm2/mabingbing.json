@@ -1,0 +1,23 @@
+{
+  "apps": [
+    {
+      "name": "expressDemo",
+      //项目的绝对路径
+      "cwd": "/E/expressDemo",
+      "script": "app.js",
+      "exec_mode": "cluster",
+      "node_args": "--harmony",
+      "watch": ["server"],
+      "env": {
+        "NODE_ENV": "development.mbb"
+      },
+      "log_date_format": "YYYY-MM-DD HH:mm Z",
+      // pm2 记录的进程日志
+      "error_file": "/logs/error.log",
+      "out_file": "/logs/out.log",
+      "pid_file": "/logs/pid.log",
+      "max_memory_restart": "400M",
+      "instance": "1"
+    }
+  ]
+}
